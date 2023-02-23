@@ -56,6 +56,14 @@ puts first_name.start_with?("J")
 email = "ashley.plasket@gmail.com"
 puts email.include? ("@")
 
+# The sub method is called on the location variable, which stores the string object "". 
+# The sub method returns a copy of Tennessee with only the first occurrence of the given pattern replaced.
+# In this example, the return value will replace the first occurrence of the "e" with argument passed in
+# The puts command prints the return value of the sub method "T3nnessee" in the console.
+location = "Tennessee"
+p location.sub("e", "3")
+
+
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
 # Call a different built-in Ruby method on each of your variables. 
