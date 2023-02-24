@@ -56,7 +56,7 @@ puts first_name.start_with?("J")
 email = "ashley.plasket@gmail.com"
 puts email.include? ("@")
 
-# The sub method is called on the location variable, which stores the string object "". 
+# The sub method is called on the location variable, which stores the string object "Tennessee". 
 # The sub method returns a copy of Tennessee with only the first occurrence of the given pattern replaced.
 # In this example, the return value will replace the first occurrence of the "e" with argument passed in
 # The puts command prints the return value of the sub method "T3nnessee" in the console.
@@ -70,10 +70,34 @@ p location.sub("e", "3")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# The div() method is called on the num variable, which stores the integer object "12389". 
+# The div() method performs integer division
+# In this example, the return value results in dividng the integer by the numeric value (2) in the arguement passed in.
+# The puts command prints the return value of 6194 in the console.
+num = 12389
+p num.div(2)
 
+
+# The to_f method is called on the digit variable, which stores the integer object "1332189". 
+# The to_f method converts the integer to a float.
+# The puts command prints the return value of 1332189.0 in the console.
+digit = 1332189
+p digit.to_f
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# The reverse method is called on the friends variable, which stores an array with 3 string elements. 
+# The reverse method returns a new array with the elements in reverse order. 
+# The puts command prints the return value ["Phoebe", "Monica", "Chandler"]
+friends = ["Chandler", "Monica", "Phoebe"]
+p friends.reverse
+
+# The rotate method is called on the travel_destinations variable, which stores an array with 4 string elements. 
+# The rotate method returns a new array where it rotates the first element "New Zealand" to the last position in the array
+# The puts command prints the return value ["Italy", "South America", "Antartica", "New Zealand"]
+travel_destinations = ["New Zealand", "Italy", "South America", "Antartica"]
+p travel_destinations.rotate
